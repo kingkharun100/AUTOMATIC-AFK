@@ -1,0 +1,9 @@
+-- This is used for my soon new scripthub ware (may not work the one ima show below)
+
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		local vu = game:GetService("VirtualUser")
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
